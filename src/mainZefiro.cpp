@@ -1,5 +1,4 @@
 
-/*
 #include <Arduino.h>
 #include <protocol/SerialDevice.h>
 #include <protocol/LoopManager.h>
@@ -16,7 +15,7 @@ int16_t ADC_resolution = 14;
 int16_t DAC_resolution = 12;
 Zefiro2 *zef;
 
-
+/*
 void setup()
 {
   EasyDAC::bitResolution = DAC_resolution;
@@ -61,7 +60,7 @@ void setup()
   zef->Open();
 }
 */
-/*
+
 void setup()
 {
   EasyDAC::bitResolution = DAC_resolution;
@@ -114,4 +113,3 @@ void loop()
 {
   LoopManager::getInstance()->run();
 }
-*/

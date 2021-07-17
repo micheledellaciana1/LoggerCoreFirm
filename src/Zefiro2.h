@@ -155,6 +155,12 @@ public:
 
         if (currentHeater != 0)
             resistanceHeater = voltageFallHeater / currentHeater;
+
+        //turn off if read bad heater reasistance
+
+        if (resistanceHeater < 0)
+            _heaterDriver->setCurrentValue(0);
+
         tempSensor /= counter;
         RHSensor /= counter;
         OxygenC /= counter;

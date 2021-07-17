@@ -1,3 +1,5 @@
+
+/*
 #include <Arduino.h>
 #include <protocol/SerialDevice.h>
 #include <protocol/LoopManager.h>
@@ -34,3 +36,4 @@ void loop()
 {
   LoopManager::getInstance()->run();
 }
+*/
